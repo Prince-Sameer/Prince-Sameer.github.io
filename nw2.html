@@ -1,0 +1,7 @@
+{% extends "nw.html" %}
+{% block body %}
+<form action ="{{ url_for("f1")}}" method="post">
+<h1><i><strong>Hey handsome, tell me your name</strong></i></h1>
+<input name="name" type="text" placeholder="Your name">
+<button>submit</button>
+{% endblock %}

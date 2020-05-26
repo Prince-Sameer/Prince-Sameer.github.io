@@ -1,0 +1,15 @@
+{% extends "nw.html" %}
+{% block head %}
+{{name}}
+{% endblock %}
+{% block body %}
+<h2> HELLO, {{name}} Chose one</h2>
+<form action = "{{ url_for("dish") }}" method="post">
+<label for "FOOD">
+<input list="FOODS" id="FOOD" name="food">
+<datalist id="FOODS">
+  <option value="Biryani">
+  <option value="Pulao">
+</datalist>
+</form>
+{% endblock %}
